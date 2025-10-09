@@ -24,7 +24,7 @@ namespace DisaHeim
         {}
 
         public Amulet(string itemid):
-            this(itemid,Level.medium,null)
+            this(itemid,Level.Medium,null)
        
         {}
 

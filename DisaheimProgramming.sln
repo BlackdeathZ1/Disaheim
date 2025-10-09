@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisaHeim", "Level\DisaHeim.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisaheimTest", "DisaheimTest\DisaheimTest.csproj", "{80F52BA2-2D60-4C9E-A942-ACD8CF2BF852}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest2", "UnitTest2\UnitTest2.csproj", "{4EAA1117-4602-49B4-A86D-985319B8F48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest3", "UnitTest3\UnitTest3.csproj", "{B1C3E863-D5B0-4DDE-839D-A45E5A77DE71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{80F52BA2-2D60-4C9E-A942-ACD8CF2BF852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F52BA2-2D60-4C9E-A942-ACD8CF2BF852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80F52BA2-2D60-4C9E-A942-ACD8CF2BF852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAA1117-4602-49B4-A86D-985319B8F48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAA1117-4602-49B4-A86D-985319B8F48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAA1117-4602-49B4-A86D-985319B8F48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAA1117-4602-49B4-A86D-985319B8F48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C3E863-D5B0-4DDE-839D-A45E5A77DE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C3E863-D5B0-4DDE-839D-A45E5A77DE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C3E863-D5B0-4DDE-839D-A45E5A77DE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C3E863-D5B0-4DDE-839D-A45E5A77DE71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

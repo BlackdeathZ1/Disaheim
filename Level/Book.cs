@@ -8,9 +8,9 @@ namespace DisaHeim
 {
     public class Book
     {
-        string ItemId;
-        string Title;
-        double Price;
+       public string ItemId;
+       public string Title;
+       public double Price;
 
         public Book(string itemid, string title, double price)
         {

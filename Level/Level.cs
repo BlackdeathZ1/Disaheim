@@ -8,8 +8,8 @@ namespace DisaHeim
 {
     public enum Level
     {
-        low, 
-        medium, 
-        high
+        Low, 
+        Medium, 
+        High
     }
 }
