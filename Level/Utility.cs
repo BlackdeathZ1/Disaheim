@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DisaHeim
 {
-    public class Utillity
+    public class Utility
     {
         public double GetValueOfBook(Book book)
             {
@@ -15,11 +15,11 @@ namespace DisaHeim
             }
         public double GetValueOfAmulet(Amulet amulet)
         {
-            if (amulet.Quality == Level.low)
+            if (amulet.Quality == Level.Low)
             {
                 return 12.5;
             }
-            else if (amulet.Quality == Level.medium)
+            else if (amulet.Quality == Level.Medium)
             {
                 return 20;
             }

@@ -17,8 +17,8 @@ namespace DisaheimTest
             b3 = new Book("3", "Spirits in the Night", 123.55);
 
             a1 = new Amulet("11");
-            a2 = new Amulet("12", Level.high);
-            a3 = new Amulet("13", Level.low, "Capricorn");
+            a2 = new Amulet("12", Level.High);
+            a3 = new Amulet("13", Level.Low, "Capricorn");
         }
 
         [TestMethod]
@@ -40,19 +40,18 @@ namespace DisaheimTest
         [TestMethod]
         public void AmuletConstructorWithOneParameter()
         {
-            Assert.AreEqual("ItemId: 11, Quality: medium, Design: ", a1.ToString());
+            Assert.AreEqual("ItemId: 11, Quality: Medium, Design: ", a1.ToString());
         }
         [TestMethod]
         public void AmuletConstructorWithTwoParameters()
         {
-            Assert.AreEqual("ItemId: 12, Quality: high, Design: ", a2.ToString());
+            Assert.AreEqual("ItemId: 12, Quality: High, Design: ", a2.ToString());
         }
         [TestMethod]
         public void AmuletConstructorWithThreeParameters()
         {
-            Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
+            Assert.AreEqual("ItemId: 13, Quality: Low, Design: Capricorn", a3.ToString());
         }
     }
-
-
 }
+
