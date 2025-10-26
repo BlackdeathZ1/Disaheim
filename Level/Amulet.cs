@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace DisaHeim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId;
         public string Design;
         public Level? Quality;
 
-        public Amulet(string itemid, Level? quality, string design)
+        public Amulet(string itemid, Level? quality, string design) 
         {
             this.ItemId = itemid;
             this.Quality = quality;

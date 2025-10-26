@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Level\DisaHeim.csproj" />
+    <ProjectReference Include="..\”UtilityLib\”UtilityLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
