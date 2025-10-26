@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace DisaHeim
 {
-    public class Book
+    public class Book : Merchandise
     {
-       public string ItemId;
        public string Title;
        public double Price;
 
-        public Book(string itemid, string title, double price)
+        public Book(string itemid, string title, double price) 
         {
             this.ItemId = itemid;
             this.Title = title;
