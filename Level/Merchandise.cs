@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace DisaHeim
 {
-    public abstract class Merchandise
+    public abstract class Merchandise : IValuable
     {
         public string ItemId;
+
+        public abstract double GetValue();
 
         public override string ToString()
         {

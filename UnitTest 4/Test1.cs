@@ -1,10 +1,12 @@
-﻿using System.Globalization;
-using DisaHeim;
-using System.Reflection.Emit;
+﻿using DisaHeim;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace UnitTest_4
+namespace DisaheimTest
 {
-
     [TestClass]
     public class UnitTest4
     {
@@ -13,15 +15,12 @@ namespace UnitTest_4
         Course c1, c2;
 
         CourseRepository courses;
-        BookRepository books;
-        AmuletRepository amulets;
+
+        MerchandiseRepository merchandise;
 
         [TestInitialize]
         public void Init()
         {
-            // Forcing the culture to be the one we use in the tests
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("da-DK");
-
             // Arrange
             b1 = new Book("1");
             b2 = new Book("2", "Falling in Love with Yourself");
@@ -35,17 +34,12 @@ namespace UnitTest_4
             c2 = new Course("Nuru Massage using Chia Oil", 157);
 
             courses = new CourseRepository();
-            books = new BookRepository();
-            amulets = new AmuletRepository();
+            //books = new BookRepository();
+            //amulets = new AmuletRepository();
+            merchandise = new MerchandiseRepository();
 
             // Act
-            books.AddBook(b1);
-            books.AddBook(b2);
-            books.AddBook(b3);
 
-            amulets.AddAmulet(a1);
-            amulets.AddAmulet(a2);
-            amulets.AddAmulet(a3);
 
             courses.AddCourse(c1);
             courses.AddCourse(c2);
@@ -54,14 +48,23 @@ namespace UnitTest_4
         [TestMethod]
         public void TestGetBook()
         {
+            // Act 
+            merchandise.AddMerchandise(b1);
+            merchandise.AddMerchandise(b2);
+            merchandise.AddMerchandise(b3);
             // Assert
-            Assert.AreEqual(b2, books.GetBook("2"));
+            Assert.AreEqual(b2, merchandise.GetMerchandise("2"));
         }
         [TestMethod]
         public void TestGetAmulet()
         {
+            //Act 
+            merchandise.AddMerchandise(a1);
+            merchandise.AddMerchandise(a2);
+            merchandise.AddMerchandise(a3);
+
             // Assert
-            Assert.AreEqual(a3, amulets.GetAmulet("13"));
+            Assert.AreEqual(a3, merchandise.GetMerchandise("13"));
         }
         [TestMethod]
         public void TestGetCourse()
@@ -72,14 +75,23 @@ namespace UnitTest_4
         [TestMethod]
         public void TestGetTotalValueForBook()
         {
+            // Act 
+            merchandise.AddMerchandise(b1);
+            merchandise.AddMerchandise(b2);
+            merchandise.AddMerchandise(b3);
+
             // Assert
-            Assert.AreEqual(123.55, books.GetTotalValue());
+            Assert.AreEqual(123.55, merchandise.GetTotalValue());
         }
         [TestMethod]
         public void TestGetTotalValueForAmulet()
         {
+            // Act 
+            merchandise.AddMerchandise(a1);
+            merchandise.AddMerchandise(a2);
+            merchandise.AddMerchandise(a3);
             // Assert
-            Assert.AreEqual(60.0, amulets.GetTotalValue());
+            Assert.AreEqual(60.0, merchandise.GetTotalValue());
         }
         [TestMethod]
         public void TestGetTotalValueForCourse()
@@ -87,8 +99,6 @@ namespace UnitTest_4
             // Assert
             Assert.AreEqual(2625.0, courses.GetTotalValue());
         }
+
     }
-
-
 }
-
